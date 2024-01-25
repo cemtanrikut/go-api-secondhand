@@ -13,4 +13,18 @@ type User struct {
 	updateDate  string
 	isDeleted   bool
 	isActive    bool
+	address     Address
+}
+
+type Address struct {
+	userID    string
+	country   string
+	city      string
+	town      string
+	postCode  string
+	lat       float64
+	lon       float64
+	isActive  bool
+	isDeleted bool
+	isPrimary bool
 }
